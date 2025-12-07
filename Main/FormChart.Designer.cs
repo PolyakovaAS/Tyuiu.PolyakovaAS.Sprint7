@@ -37,17 +37,16 @@
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(button_close);
             groupBox1.Controls.Add(pictureBox1);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(1197, 660);
+            groupBox1.Size = new Size(1275, 868);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             // 
             // button_close
             // 
-            button_close.Location = new Point(15, 596);
+            button_close.Location = new Point(27, 811);
             button_close.Name = "button_close";
             button_close.Size = new Size(75, 58);
             button_close.TabIndex = 1;
@@ -59,7 +58,7 @@
             // 
             pictureBox1.Location = new Point(15, 22);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(1176, 568);
+            pictureBox1.Size = new Size(1254, 771);
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -67,7 +66,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1221, 675);
+            ClientSize = new Size(1299, 881);
+            Controls.Add(button_close);
             Controls.Add(groupBox1);
             Name = "FormChart";
             Text = "FormChart";

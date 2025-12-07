@@ -29,17 +29,21 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            button1 = new Button();
+            button_save_as = new Button();
             button_delete = new Button();
             button_add = new Button();
             button_save = new Button();
             dataGridView1 = new DataGridView();
-            button_save_as = new Button();
+            button2 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(button2);
+            groupBox1.Controls.Add(button1);
             groupBox1.Controls.Add(button_save_as);
             groupBox1.Controls.Add(button_delete);
             groupBox1.Controls.Add(button_add);
@@ -50,6 +54,26 @@
             groupBox1.Size = new Size(1168, 597);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            button1.Location = new Point(949, 22);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 43);
+            button1.TabIndex = 5;
+            button1.Text = "+";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // button_save_as
+            // 
+            button_save_as.Location = new Point(290, 545);
+            button_save_as.Name = "button_save_as";
+            button_save_as.Size = new Size(75, 40);
+            button_save_as.TabIndex = 4;
+            button_save_as.Text = "88";
+            button_save_as.UseVisualStyleBackColor = true;
+            button_save_as.Click += button_save_as_Click;
             // 
             // button_delete
             // 
@@ -86,18 +110,19 @@
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(6, 22);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(1156, 512);
+            dataGridView1.Size = new Size(937, 512);
             dataGridView1.TabIndex = 0;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // button_save_as
+            // button2
             // 
-            button_save_as.Location = new Point(290, 545);
-            button_save_as.Name = "button_save_as";
-            button_save_as.Size = new Size(75, 40);
-            button_save_as.TabIndex = 4;
-            button_save_as.Text = "88";
-            button_save_as.UseVisualStyleBackColor = true;
-            button_save_as.Click += button_save_as_Click;
+            button2.Location = new Point(1087, 542);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 43);
+            button2.TabIndex = 6;
+            button2.Text = "2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // toolStripMain
             // 
@@ -120,5 +145,7 @@
         private Button button_add;
         private Button button_save;
         private Button button_save_as;
+        private Button button1;
+        private Button button2;
     }
 }

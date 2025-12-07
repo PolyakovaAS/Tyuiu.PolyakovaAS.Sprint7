@@ -15,8 +15,7 @@ namespace Main
 
         private void button_au_Click(object sender, EventArgs e)
         {
-            statusStripMain formStats = new statusStripMain();
-            formStats.Show();
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
